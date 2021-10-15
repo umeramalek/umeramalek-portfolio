@@ -34,3 +34,13 @@ header{
     color: inherit;
     padding: 10px;
 }
+
+.nav-links:after{
+    height: 3px;
+    transition:transform 150ms ease-in-out;
+    transform:scaleX(0);
+}
+
+.nav-links:hover::after{
+    transform:scaleX(1);
+}
