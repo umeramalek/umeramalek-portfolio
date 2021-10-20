@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umera Malek Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="./style.css" rel="stylesheet" />
@@ -12,8 +13,8 @@
 </head>
 
 <body>
-<!-- Navbar -->
-<header>
+
+<header class ="image">
     <a class = "logo" aria-label="homepage">Umera Malek</a>
     <div class="nav-bar">
         <ul class = "list">
@@ -33,59 +34,58 @@
     </div>
 </header>
     
-<main>
-    <section class="intro">
-        <h1> Umera Malek</h1>
-    </section>
+<main class="bg-image">
 
-    <div class = "about-me-section" id="about">
+    <div class = "about-me-section about slide-in">
         <h1> About me </h1>
-        <h2> Programmer in Training </h2>
+        <h3> Programmer in Training </h3>
         <p>My name is Umera. Currently I am studying full stack web develpment at University of Berkeley. I am hoping to learn a lot and make use of the knowledge for my career path. Everyday I am learning new things and absolutely loving the challenge.</p>
     </div>
 
     <div class="projects-section" id="projects">
+        <h1 class="about slide-in"> Projects </h1>
         <div class = "main-grid">
-            <h1> Projects </h1>
             <a href="
             https://ghmurphy2.github.io/EzVibez/" target="_blank">
-                <img class="slide-in from-left" src="./img/lyrics.png" alt="music icon">
+                <img class="slide-in is-visible from-left" src="./img/lyrics.png" alt="music icon">
             </a>
-            <p class="slide-in from-right"> EzVibez is a fun and dynamic lyric analyzer that lets you have fun while you think deep on your favorite track</p>
+            <p class="slide-in is-visible from-right"> EzVibez is a fun and dynamic lyric analyzer that lets you have fun while you think deep on your favorite track</p>
         </div>
         <div class = "main-grid">
             <a href="
             https://github.com/umeramalek/team-profile-generator" target="_blank">
-                <img class="slide-in from-left" src="./img/team.png" alt="team icon">
+                <img class="slide-in is-visible from-left" src="./img/team.png" alt="team icon">
             </a>
-            <p class="slide-in from-right"> Team Profile generator is a Node js command line application that takes in information on about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.</p>
+            <p class="slide-in is-visible from-right"> Team Profile generator is a Node js command line application that takes in information on about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Testing is key to making code maintainable, so you’ll also write a unit test for every part of your code and ensure that it passes each test.</p>
         </div>
         <div class = "main-grid">
             <a href="
             https://umeramalek.github.io/timed-quiz/" target="_blank">
-                <img class="slide-in from-left" src="./img/quiz.png" alt="quiz icon">
+                <img class="slide-in  is-visible from-left" src="./img/quiz.png" alt="quiz icon">
             </a>
-            <p class="slide-in from-right"> Code quiz is a 10 question coding quiz on jaavscipt. This is a timed quiz, for every right answer you get 5 seconds added to your time and for every wring answer you get 20 seconds subtracted from your time. Your score are stored with your name.</p>
+            <p class="slide-in is-visible from-right"> Code quiz is a 10 question coding quiz on jaavscipt. This is a timed quiz, for every right answer you get 5 seconds added to your time and for every wring answer you get 20 seconds subtracted from your time. Your score are stored with your name.</p>
         </div>
         <div class = "main-grid">
             <a href="
             https://umeramalek.github.io/workday-scheduler/" target="_blank">
-                <img class="slide-in from-left" src="./img/schedular.png" alt="daily schedular icon">
+                <img class="slide-in is-visible from-left" src="./img/schedular.png" alt="daily schedular icon">
             </a>
-            <p class="slide-in from-right"> Daily schedular is a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+            <p class="slide-in is-visible from-right"> Daily schedular is a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
         </div>
         <div class = "main-grid">
             <a href="
             https://umeramalek.github.io/weather-report/" target="_blank">
-                <img class="slide-in from-left" src="./img/weather.png" alt="weather icon">
+                <img class="slide-in  is-visible from-left" src="./img/weather.png" alt="weather icon">
             </a>
-            <p class="slide-in from-right"> Weather Dashboard is a site created with a third party weather API, that displays current weather and a five day forecast upon search by city </p>
+            <p class="slide-in  is-visible from-right"> Weather Dashboard is a site created with a third party weather API, that displays current weather and a five day forecast upon search by city </p>
         </div>
     </div>
 
-    <div class = "resume-section" id="resume">
+    <div class = "resume-section slide-in " id="resume">
         <h1> Resume </h1>
-        <img scr="" href="" class="resume-image">
+        <a href="./files/Umera Malek SE Resume.pdf" target="_blank">
+            <img src="./img/resume.png" class="resume-image">
+        </a>
     </div>
 
      <!-- Footer-->
@@ -109,5 +109,10 @@
     </div>
 
 </main>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script src="./script.js"></script>
+
 </body>
 </html>
