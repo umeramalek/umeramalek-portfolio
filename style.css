@@ -9,7 +9,7 @@ body {
 }
 
 .bg-image{
-    background-image: url(https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash.jpg);
+    background-image: url(https://img.freepik.com/free-photo/gray-painted-background_53876-94041.jpg?size=626&ext=jpg);
     
 }
 
@@ -116,7 +116,7 @@ header{
 }
 .slide-in{
     font-weight: bolder;
-    color:white;
+    color:black;
     -webkit-transition: opacity 200ms ease-in-out;
     -ms-transition: opacity 200ms ease-in-out;
     -moz-transition: opacity 200ms ease-in-out;
@@ -130,7 +130,7 @@ header{
 .resume-section{
     margin: auto;
     width: 100%;
-    padding-left: 800px;
+    padding-left: 600px;
     opacity: 0;
     padding-bottom: 10rem;
 }
@@ -139,7 +139,7 @@ footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
     background-color: lightgray;
-    padding-left: 800px;
+    padding-left: 600px;
   }
   
   
