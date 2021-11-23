@@ -93,6 +93,10 @@ header{
       );
   }
   
+  .icon{
+      padding-left: -10em;
+  }
+
   .from-left {
     border-radius: 8px;
     opacity: 0;
@@ -109,12 +113,17 @@ header{
     grid-column: 2 / 3;
     transform: translateX(-50%);
     animation: come-in 0.8s ease forwards;
-    
+    width:400px;
+    position: relative;
 }
 .from-right{
     grid-column: 2 / 3;
     transform: translateX(50%);
+    width:400px;
+    position: relative;
 }
+
+
 .slide-in{
     font-weight: bolder;
     color:black;
@@ -124,7 +133,6 @@ header{
     -o-transition: opacity 200ms ease-in-out;
     transition: opacity 200ms ease-in-out;
     position: relative;
-    margin-top: 20px;
     clear: both;
     font-size: 20px;
 }
